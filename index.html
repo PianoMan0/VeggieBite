@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VeggieBite – Vegetarian Fast Food Restaurant Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.6/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-50 text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="bg-green-700 text-white shadow">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl font-bold tracking-tight">🥗 VeggieBite</span>
+        <span class="ml-2 text-xs bg-green-900 px-2 py-1 rounded">100% Vegetarian</span>
+      </div>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#menu" class="hover:text-green-200">Menu</a>
+        <a href="#about" class="hover:text-green-200">About</a>
+        <a href="#specials" class="hover:text-green-200">Specials</a>
+        <a href="#faq" class="hover:text-green-200">FAQ</a>
+        <a href="#contact" class="hover:text-green-200">Contact</a>
+      </nav>
+      <button class="md:hidden flex items-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-green-100 py-16">
+    <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-green-800">Fast. Fresh. 100% Veg.</h1>
+        <p class="mb-6 text-lg text-green-900">Discover the tastiest vegetarian fast food in town! Burgers, wraps, salads, and more — always fresh, always green.</p>
+        <a href="#menu" class="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 transition">See Our Menu</a>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80" alt="Veggie Burger" class="rounded-xl shadow-xl w-80">
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials / Featured Dishes -->
+  <section id="specials" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-green-800 mb-8 text-center">Today's Specials</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Veggie Wrap" class="rounded-lg mb-4 w-full h-40 object-cover">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Spicy Chickpea Wrap</h3>
+        <p class="text-gray-700 mb-2">A protein-packed wrap with spicy roasted chickpeas, fresh veggies, and creamy sauce.</p>
+        <span class="text-green-800 font-bold">$7.99</span>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80" alt="Veggie Burger" class="rounded-lg mb-4 w-full h-40 object-cover">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Ultimate Veggie Burger</h3>
+        <p class="text-gray-700 mb-2">Grilled black bean patty, lettuce, tomato, and our signature mayo.</p>
+        <span class="text-green-800 font-bold">$8.49</span>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Salad Bowl" class="rounded-lg mb-4 w-full h-40 object-cover">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Rainbow Salad Bowl</h3>
+        <p class="text-gray-700 mb-2">A colorful medley of greens, grains, and roasted veggies topped with mouth-watering dressing.</p>
+        <span class="text-green-800 font-bold">$6.99</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="bg-green-50 py-16 px-6">
+    <h2 class="text-3xl font-bold text-green-800 mb-8 text-center">Full Menu</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-green-700">Burgers</h3>
+        <ul>
+          <li class="flex justify-between py-2 border-b">
+            <span>Classic Veggie Burger</span>
+            <span class="font-bold">$6.99</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Mushroom Burger</span>
+            <span class="font-bold">$7.49</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Spicy Bean Burger</span>
+            <span class="font-bold">$7.29</span>
+          </li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-8 mb-4 text-green-700">Wraps</h3>
+        <ul>
+          <li class="flex justify-between py-2 border-b">
+            <span>Falafel Wrap</span>
+            <span class="font-bold">$6.49</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Grilled Veggie Wrap</span>
+            <span class="font-bold">$6.99</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-green-700">Salads & Sides</h3>
+        <ul>
+          <li class="flex justify-between py-2 border-b">
+            <span>Greek Salad</span>
+            <span class="font-bold">$5.99</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Sweet Potato Fries</span>
+            <span class="font-bold">$3.99</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Hummus & Pita</span>
+            <span class="font-bold">$4.49</span>
+          </li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-8 mb-4 text-green-700">Drinks</h3>
+        <ul>
+          <li class="flex justify-between py-2 border-b">
+            <span>Fresh Lemonade</span>
+            <span class="font-bold">$2.99</span>
+          </li>
+          <li class="flex justify-between py-2 border-b">
+            <span>Mango Smoothie</span>
+            <span class="font-bold">$3.99</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16 px-6">
+    <div class="md:flex md:items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Our Story" class="rounded-xl shadow-lg w-full">
+      </div>
+      <div class="md:w-1/2 md:pl-12">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">About VeggieBite</h2>
+        <p class="mb-4">VeggieBite was founded with a simple mission: to make vegetarian fast food delicious, accessible, and fun. Jk, we were made as an example site for Grub! Our menu is packed with plant-based goodness, made fresh daily from locally sourced ingredients.</p>
+        <ul class="list-disc pl-5 text-green-700">
+          <li>100% vegetarian kitchen</li>
+          <li>Locally sourced produce</li>
+          <li>Eco-friendly packaging</li>
+          <li>Fast, friendly service</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-green-100 py-16 px-6">
+    <h2 class="text-3xl font-bold text-green-800 mb-8 text-center">Frequently Asked Questions</h2>
+    <div class="max-w-2xl mx-auto">
+      <div class="mb-4">
+        <button class="w-full text-left bg-white px-6 py-4 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-green-500" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          <span class="font-semibold text-green-700">Are all your menu items vegan?</span>
+        </button>
+        <div class="hidden px-6 py-4 bg-white border-t">Most items are vegan or can be made vegan. Look for the 🌱 symbol on our menu!</div>
+      </div>
+      <div class="mb-4">
+        <button class="w-full text-left bg-white px-6 py-4 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-green-500" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          <span class="font-semibold text-green-700">Do you use organic ingredients?</span>
+        </button>
+        <div class="hidden px-6 py-4 bg-white border-t">We source as many organic ingredients as possible, prioritizing local farms.</div>
+      </div>
+      <div class="mb-4">
+        <button class="w-full text-left bg-white px-6 py-4 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-green-500" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          <span class="font-semibold text-green-700">Do you offer gluten-free options?</span>
+        </button>
+        <div class="hidden px-6 py-4 bg-white border-t">Yes! Many of our salads and bowls are gluten-free, and we offer gluten-free buns upon request.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter Signup -->
+  <section id="contact" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-green-800 mb-4 text-center">Contact & Newsletter</h2>
+    <form class="max-w-xl mx-auto bg-white rounded-xl shadow-lg p-8 flex flex-col gap-4">
+      <input type="text" placeholder="Your Name" class="border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"/>
+      <input type="email" placeholder="Your Email" class="border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"/>
+      <textarea placeholder="Your Message" rows="3" class="border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+      <button type="submit" class="bg-green-700 text-white py-2 rounded hover:bg-green-800 transition">Send Message</button>
+      <div class="text-center text-green-700 mt-2">Or sign up for our newsletter!</div>
+      <input type="email" placeholder="Newsletter Email" class="border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"/>
+      <button type="submit" class="bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+      <div class="mb-2 md:mb-0">&copy; 2025 VeggieBite. All rights reserved.</div>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-green-200">Instagram (Not really)</a>
+        <a href="#" class="hover:text-green-200">Facebook (Fake)</a>
+        <a href="#" class="hover:text-green-200">Twitter (This is just an example site!)</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+          
